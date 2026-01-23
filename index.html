@@ -19,7 +19,18 @@
           </ul>
           <ul class="nav-btn-container">
             <!-- <li><a class="btn btn-primary-outline" href="">Login</a></li> -->
-            <li><a class="btn btn-primary" href="">About Me</a></li>
+            <li>
+              <a
+                class="btn btn-primary"
+                href=""
+                aria-disabled="true"
+                onclick="
+                  event.preventDefault();
+                  alert('In Progress');
+                "
+                >About Me</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
