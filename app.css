@@ -312,9 +312,10 @@ li {
   /* border: 1px solid #333; */
   padding: 8px;
   /* text-align: center; */
-  font-size: var(--text-h5);
+  font-size: var(--text-paragraph);
   box-shadow: 0 2px 6px #c3c2c21a;
   transition: 0.5s;
+  margin: 1rem;
 }
 
 .cell:hover {
