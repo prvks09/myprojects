@@ -172,7 +172,7 @@ a:active {
 .navbar {
   height: var(--nav-height);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   position: fixed;
   top: 0;
@@ -283,7 +283,7 @@ a:active {
 
 .proj-details {
   margin-top: calc(var(--nav-height) + 6rem);
-  margin-left: 6rem;
+  margin-left: auto;
 }
 
 li {
@@ -292,8 +292,9 @@ li {
 
 .grid-table {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 2 equal columns */
-  gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+
+  gap: 1rem;
   text-align: center;
 }
 
