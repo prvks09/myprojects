@@ -294,8 +294,9 @@ li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
 
-  gap: 1rem;
+  gap: 5rem;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 .proj-heading {
@@ -310,12 +311,13 @@ li {
 
 .cell {
   /* border: 1px solid #333; */
-  padding: 8px;
+  padding: 0.25rem 0.5rem;
   /* text-align: center; */
   font-size: var(--text-paragraph);
   box-shadow: 0 2px 6px #c3c2c21a;
   transition: 0.5s;
-  margin: 1rem;
+  margin: 0.25rem 0.5rem;
+  width: fit-content;
 }
 
 .cell:hover {
@@ -324,8 +326,8 @@ li {
 }
 
 .cell a {
-  font-size: var(--text-h4);
+  font-size: var(--text-base);
 }
 .cell a:hover {
-  font-size: var(--text-h4);
+  font-weight: bold;
 }
