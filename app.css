@@ -292,11 +292,11 @@ li {
 
 .grid-table {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-
-  gap: 5rem;
-  text-align: center;
-  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows:;
+  gap: 2rem;
+  /* text-align: center; */
+  justify-content: center;
 }
 
 .proj-heading {
@@ -310,20 +310,18 @@ li {
 }
 
 .cell {
-  width: 150px; /* fixed width */
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  padding: 1rem;
+  font-size: var(--text-paragraph);
+  box-shadow: 0 2px 6px #c3c2c21a;
+  transition: 0.3s;
+  margin: 0.25rem;
 }
-
-/* .cell:hover {
-  box-shadow: 3px 3px 4px #424242;
-  background-color: #2b2b2b1a;
-} */
 
 .cell a {
-  font-size: var(--text-paragraph);
+  display: block; /* fills the cell */
+  text-align: center;
 }
+
 .cell a:hover {
-  font-weight: bold;
+  font-weight: bold; /* safe now, no reflow */
 }
